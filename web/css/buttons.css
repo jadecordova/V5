@@ -1,0 +1,23 @@
+button {
+    border       : none;
+    border-radius: var(--border-radius, 6px);
+    padding      : calc(var(--padding, 1rem) / 2);
+    background   : var(--accent-1, #ff00ae);
+    color        : var(--text-color, #ffffff);
+    cursor       : pointer;
+
+    &:hover {
+        background: var(--text-color-light, #e6009e);
+        color     : var(--accent-1, #ff00ae);
+    }
+
+    &.secondary {
+        background: var(--grey-1, #cdcdcd);
+        color     : var(--text-color-dark, #333333);
+
+        &:hover {
+            background: var(--text-color-dark, #333333);
+            color     : var(--grey-1);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+const toggleBtn = document.getElementById('theme-toggle');
+
+// 1. Check for saved theme preference on page load
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  updateButtonText(savedTheme);
+}
+
+// 2. Add click event listener to the button
+toggleBtn.addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  let newTheme = 'light';
+
+  // Toggle the value
+  if (currentTheme !== 'dark') {
+    newTheme = 'dark';
+  }
+
+  // Apply the theme to the <html> tag
+  document.documentElement.setAttribute('data-theme', newTheme);
+  
+  // Save the selection to browser storage
+  localStorage.setItem('theme', newTheme);
+  
+  updateButtonText(newTheme);
+});
+
+// Helper function to keep button UI accurate
+function updateButtonText(theme) {
+  toggleBtn.textContent = theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+}

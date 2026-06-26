@@ -5,30 +5,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Python/Eel App</title>
+
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/setup.css">
+        <link rel="stylesheet" href="css/dialogs.css">
+        <link rel="stylesheet" href="css/buttons.css">
         <link rel="stylesheet" href="css/style.css">
+
     </head>
 
     <body>
-        <div class="container">
-            <h1>Welcome to Eel App</h1>
-            <p>This is a Python/JavaScript desktop application built with Eel</p>
 
-            <div class="section">
-                <h2>Call Python from JavaScript</h2>
-                <input type="text" id="nameInput" placeholder="Enter your name" value="World">
-                <button onclick="callGreet()">Greet Me</button>
-                <p id="greetResult"></p>
+        <dialog open id="dialog">
+            <div class="title">Dialog Title</div>
+            <div class="content">
+                <p>This is a dialog box.</p>
             </div>
-
-            <div class="section">
-                <h2>Get Python Data</h2>
-                <button onclick="getPythonData()">Get Python Info</button>
-                <div id="pythonInfo"></div>
+            <div class="footer">
+                <button id="dialog-cancel-button" class="secondary">Cancel</button>
+                <button id="dialog-ok-button">OK</button>
             </div>
-        </div>
+        </dialog>
 
-        <!-- Eel script - required for communication between Python and JavaScript -->
-        <script type="text/javascript" src="/eel.js"></script>
+        <!-- SCRIPTS ------------------------------------------------------------------------------------------------------------------->
+        <script src="/eel.js"></script>
+        <script src="js/movie.js"></script>
+        <script src="js/star.js"></script>
+        <script src="js/tag.js"></script>
         <script src="js/main.js"></script>
     </body>
 
