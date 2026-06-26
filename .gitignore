@@ -41,3 +41,7 @@ Thumbs.db
 dist/
 build/
 data/
+**/lin/
+**/val/
+**/filo/
+**/mafe/

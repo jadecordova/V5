@@ -1,5 +1,5 @@
-import eel
 import os
+import eel
 
 # Set web files folder and allowed file extensions
 eel.init('web')
