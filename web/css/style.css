@@ -1,0 +1,110 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background     : linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height     : 100vh;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding        : 20px;
+}
+
+.container {
+    background   : white;
+    border-radius: 10px;
+    box-shadow   : 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding      : 40px;
+    max-width    : 600px;
+    width        : 100%;
+}
+
+h1 {
+    color        : #333;
+    margin-bottom: 10px;
+    text-align   : center;
+}
+
+p {
+    color        : #666;
+    text-align   : center;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding      : 20px;
+    background   : #f8f9fa;
+    border-radius: 8px;
+    border-left  : 4px solid #667eea;
+}
+
+h2 {
+    color        : #333;
+    font-size    : 18px;
+    margin-bottom: 15px;
+}
+
+input {
+    width        : 100%;
+    padding      : 10px;
+    border       : 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size    : 14px;
+}
+
+button {
+    background   : #667eea;
+    color        : white;
+    border       : none;
+    padding      : 10px 20px;
+    border-radius: 5px;
+    cursor       : pointer;
+    font-size    : 14px;
+    transition   : background 0.3s;
+    width        : 100%;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#greetResult,
+#pythonInfo {
+    margin-top   : 15px;
+    padding      : 15px;
+    background   : white;
+    border-radius: 5px;
+    min-height   : 40px;
+    display      : none;
+}
+
+#greetResult.show,
+#pythonInfo.show {
+    display: block;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+.success {
+    color: #27ae60;
+}
+
+pre {
+    background   : #f0f0f0;
+    padding      : 10px;
+    border-radius: 5px;
+    overflow-x   : auto;
+    margin-top   : 10px;
+}

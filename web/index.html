@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python/Eel App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Welcome to Eel App</h1>
+            <p>This is a Python/JavaScript desktop application built with Eel</p>
+
+            <div class="section">
+                <h2>Call Python from JavaScript</h2>
+                <input type="text" id="nameInput" placeholder="Enter your name" value="World">
+                <button onclick="callGreet()">Greet Me</button>
+                <p id="greetResult"></p>
+            </div>
+
+            <div class="section">
+                <h2>Get Python Data</h2>
+                <button onclick="getPythonData()">Get Python Info</button>
+                <div id="pythonInfo"></div>
+            </div>
+        </div>
+
+        <!-- Eel script - required for communication between Python and JavaScript -->
+        <script type="text/javascript" src="/eel.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
