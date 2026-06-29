@@ -13,6 +13,11 @@
     --body-background : #f0f2f5;
     --grey-0          : #f0f2f5;
     --grey-1          : #cdcdcd;
+
+    /* Menu variables ****************************************************************************************/
+    --menu-background: #ffffff;
+    --menu-item-hover: #f0f0f0;
+    --menu-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] {}

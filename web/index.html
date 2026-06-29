@@ -6,17 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Python/Eel App</title>
 
+        <!-- STYLES ------------------------------------------------------------------------------------------------------------------->
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/setup.css">
         <link rel="stylesheet" href="css/dialogs.css">
         <link rel="stylesheet" href="css/buttons.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
 
     </head>
 
     <body>
 
-        <dialog open id="dialog">
+        <!-- MENU ------------------------------------------------------------------------------------------------------------------->
+        <nav class="navbar">
+            <ul>
+                <!-- Movies Dropdown -->
+                <li>
+                    <a href="#">Movies</a>
+                    <div class="dropdown">
+                        <a id="import-movies-menu-button">Import movies...</a>
+                    </div>
+                </li>
+
+                <!-- Stars Dropdown -->
+                <li>
+                    <a href="#">Stars</a>
+                    <div class="dropdown">
+                        <a href="add-star-menu-button">Add star...</a>
+                    </div>
+                </li>
+
+                <!-- Tags Dropdown -->
+                <li>
+                    <a href="#">Tags</a>
+                    <div class="dropdown">
+                        <a href="add-tag-menu-button">Add tag...</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- DIALOG ------------------------------------------------------------------------------------------------------------------->
+        <dialog id="dialog">
             <div class="title">Dialog Title</div>
             <div class="content">
                 <p>This is a dialog box.</p>
@@ -29,9 +60,13 @@
 
         <!-- SCRIPTS ------------------------------------------------------------------------------------------------------------------->
         <script src="/eel.js"></script>
+        <script src="js/store.js"></script>
         <script src="js/movie.js"></script>
         <script src="js/star.js"></script>
         <script src="js/tag.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/progress.js"></script>
+        <script src="js/import-movies.js"></script>
         <script src="js/main.js"></script>
     </body>
 
